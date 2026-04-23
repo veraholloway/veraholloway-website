@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Vera Holloway</title>
+  <meta name="description" content="Counseling services offered by Vera Holloway — individual, pre-marriage, marriage and family counseling in south Louisiana." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BANNER -->
+  <div class="announcement-bar" id="announcementBar">
+    <p>My new book, <em>Your Second Chapter</em> is now available on Amazon &mdash; <a href="https://www.amazon.com/dp/B0GM21QV7R" target="_blank" rel="noopener noreferrer">Buy Here!</a></p>
+    <button class="announcement-bar__close" id="closeBar" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Vera Holloway</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="speaking.html" class="nav__link">Speaking</a></li>
+      <li><a href="services.html" class="nav__link active">Services</a></li>
+      <li><a href="resources.html" class="nav__link">Resources</a></li>
+      <li><a href="books.html" class="nav__link">Books</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <!-- To add a background photo, place services-hero.jpg in /images/ and uncomment the img tag below -->
+  <section class="services-hero">
+    <div class="services-hero__bg">
+      <!-- <img src="images/services-hero.jpg" alt="" /> -->
+    </div>
+    <div class="services-hero__overlay"></div>
+    <div class="container">
+      <div class="services-hero__content reveal">
+        <p class="services-hero__label">Services</p>
+        <h1 class="services-hero__title">Work With Me</h1>
+        <p class="services-hero__intro">Vera provides the following types of Therapy:</p>
+        <ul class="services-hero__list">
+          <li>Individual Counseling</li>
+          <li>Pre-Marriage and/or Relationship Counseling</li>
+          <li>Marriage &amp; Family Counseling</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPES OF THERAPY + COST OF SERVICES -->
+  <section class="services-details">
+    <div class="container">
+      <div class="services-details__inner">
+
+        <!-- LEFT: Types of Therapy -->
+        <div class="reveal">
+          <h2 class="services-details__heading">Types of Therapy</h2>
+          <ul class="therapy-list">
+            <li>
+              <span class="therapy-list__icon"></span>
+              <p><strong>Dialectical Behavior Therapy (DBT)</strong> &mdash; effective in treating borderline personality disorder, people who are experiencing thoughts of suicide, eating disorders, PTSD, substance use disorders, and mood disorders</p>
+            </li>
+            <li>
+              <span class="therapy-list__icon"></span>
+              <p><strong>Cognitive Behavioral Therapy (CBT)</strong> &mdash; effective in treating a variety of disorders, such as anxiety disorders, depression, bipolar disorder, eating disorders, schizophrenia, trauma-related disorders</p>
+            </li>
+            <li>
+              <span class="therapy-list__icon"></span>
+              <p><strong>Exposure Therapy</strong> &mdash; a form of CBT used to treat clients with fear and anxiety disorders, OCD, PTSD, and other phobias</p>
+            </li>
+            <li>
+              <span class="therapy-list__icon"></span>
+              <p><strong>Family Systems Therapies</strong> &mdash; used in helping individuals and families dealing with substance misuse disorders, eating disorders, behavioral problems, anxiety, OCD, or medical issues</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RIGHT: Cost of Services -->
+        <div class="reveal" style="transition-delay: 0.12s;">
+          <h2 class="services-details__heading">Cost of Services</h2>
+          <div class="cost-content">
+            <ul class="therapy-list">
+              <li>
+                <span class="therapy-list__icon"></span>
+                <p>Vera is in-network with most major insurance companies and bills her services to the client's medical insurance. Clients are responsible for the co-pay or co-insurance at the time the service is rendered.</p>
+              </li>
+              <li>
+                <span class="therapy-list__icon"></span>
+                <div>
+                  <p>Vera is in-network with the following insurance companies:</p>
+                  <ul class="insurance-list">
+                    <li>Blue Cross Blue Shield (in state and out of state policies)</li>
+                    <li>United Health Care</li>
+                    <li>UMR</li>
+                    <li>United Health Care Community Plan</li>
+                    <li>Gilsbar 360</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="therapy-list__icon"></span>
+                <p>If Vera is not in-network with the client's insurance, she will submit an out-of-network claim on behalf of the client; however, the client is responsible for payment in full at each session.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTAKE FORM -->
+  <section class="intake">
+    <div class="container">
+      <h2 class="intake__heading reveal">Work with Vera</h2>
+      <form class="intake__form reveal" action="https://formspree.io/f/xzdyyadd" method="POST">
+
+        <div class="intake__field">
+          <label for="intake-name">Name <span class="required">*</span></label>
+          <input type="text" id="intake-name" name="name" required />
+        </div>
+
+        <div class="intake__field">
+          <label for="intake-email">Email <span class="required">*</span></label>
+          <input type="email" id="intake-email" name="email" required />
+        </div>
+
+        <div class="intake__field">
+          <label for="intake-address">Mailing Address <span class="required">*</span></label>
+          <input type="text" id="intake-address" name="mailing_address" required />
+        </div>
+
+        <div class="intake__field">
+          <label for="intake-phone">Phone Number <span class="required">*</span></label>
+          <input type="tel" id="intake-phone" name="phone" required />
+        </div>
+
+        <div class="intake__field">
+          <label for="intake-insurance">Insurance Company <span class="required">*</span></label>
+          <input type="text" id="intake-insurance" name="insurance_company" required />
+        </div>
+
+        <div class="intake__field">
+          <label for="intake-policy">Group and Policy Number <span class="required">*</span></label>
+          <textarea id="intake-policy" name="group_policy_number" rows="4" required></textarea>
+        </div>
+
+        <div class="intake__field">
+          <label for="intake-reason">Reason or Type Of Counseling You Are Looking For? <span class="required">*</span></label>
+          <textarea id="intake-reason" name="reason_for_counseling" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="intake__submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="books.html" class="footer__link">Books</a>
+      <a href="speaking.html" class="footer__link">Speaking</a>
+    </div>
+    <p class="footer__center">&copy; 2026 Vera Holloway. All rights reserved.</p>
+    <div class="footer__socials">
+      <a href="https://www.facebook.com/vera.grabertholloway" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/veraholloway" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

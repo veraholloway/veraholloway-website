@@ -1,0 +1,273 @@
+/* =============================================
+   SERVICES PAGE
+   ============================================= */
+
+/* --- Hero --- */
+
+.services-hero {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--cream-mid);
+}
+
+.services-hero__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, #e8dfd0 0%, #d4c8b5 50%, #c8bca8 100%);
+  /* Replace with: background-image: url('../images/services-hero.jpg'); background-size: cover; background-position: center; */
+}
+
+.services-hero__bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(248,245,240,0.1) 0%, rgba(248,245,240,0.75) 50%, rgba(248,245,240,0.95) 100%);
+}
+
+.services-hero .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.services-hero__content {
+  max-width: 480px;
+  margin-left: auto;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.services-hero__label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: 10px;
+}
+
+.services-hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--terracotta);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.services-hero__intro {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  margin-bottom: 10px;
+}
+
+.services-hero__list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-hero__list li {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 2;
+}
+
+/* --- Types of Therapy + Cost --- */
+
+.services-details {
+  background: var(--sage-light);
+  padding: 72px 0 80px;
+}
+
+.services-details__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.services-details__heading {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--terracotta);
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.therapy-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.therapy-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.therapy-list__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  margin-top: 3px;
+  position: relative;
+}
+
+.therapy-list__icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+}
+
+.therapy-list p,
+.therapy-list div {
+  font-size: 0.86rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.75;
+}
+
+.therapy-list strong {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.insurance-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.insurance-list li {
+  font-size: 0.86rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.9;
+  padding-left: 12px;
+  position: relative;
+}
+
+.insurance-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: rgba(255,255,255,0.5);
+}
+
+/* --- Intake Form --- */
+
+.intake {
+  background: var(--white);
+  padding: 72px 0 96px;
+}
+
+.intake__heading {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--sage-dark);
+  margin-bottom: 40px;
+}
+
+.intake__form {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.intake__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.intake__field label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-mid);
+}
+
+.required {
+  color: var(--terracotta);
+}
+
+.intake__field input,
+.intake__field textarea {
+  width: 100%;
+  border: 1px solid var(--cream-deep);
+  border-radius: 3px;
+  background: var(--white);
+  padding: 12px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.intake__field input:focus,
+.intake__field textarea:focus {
+  border-color: var(--sage);
+}
+
+.intake__submit {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--text-mid);
+  padding: 11px 36px;
+  border-radius: 2px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.intake__submit:hover {
+  background: var(--text);
+  color: var(--white);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+  .services-hero__content {
+    margin-left: 0;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .services-details__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
