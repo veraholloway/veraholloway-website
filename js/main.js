@@ -30,6 +30,30 @@ navLinks?.querySelectorAll('.nav__link').forEach(link => {
   });
 });
 
+// Contact modal
+const contactModal = document.getElementById('contactModal');
+const openModalBtn = document.getElementById('openContactModal');
+const closeModalBtn = document.getElementById('closeModal');
+
+openModalBtn?.addEventListener('click', (e) => {
+  e.preventDefault();
+  contactModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+function closeModal() {
+  contactModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+closeModalBtn?.addEventListener('click', closeModal);
+contactModal?.addEventListener('click', (e) => {
+  if (e.target === contactModal) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
 // Scroll reveal
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(
