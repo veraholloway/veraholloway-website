@@ -4,410 +4,256 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vera Holloway — Licensed Counselor, Author & Speaker</title>
-  <meta name="description" content="Vera Holloway is a licensed professional counselor, author, speaker, and women's ministry leader based in south Louisiana. Offering individual counseling, speaking engagements, and biblical resources for women." />
+  <meta name="description" content="Vera Holloway is a licensed professional counselor, author, speaker, and women's ministry leader based in south Louisiana." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
+  <!-- ANNOUNCEMENT BANNER -->
+  <div class="announcement-bar" id="announcementBar">
+    <p>My new book, <em>Your Second Chapter</em> is now available on Amazon &mdash; <a href="https://www.amazon.com/dp/1733736832" target="_blank" rel="noopener noreferrer">Buy Here!</a></p>
+    <button class="announcement-bar__close" id="closeBar" aria-label="Close announcement">&times;</button>
+  </div>
+
   <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav__logo">
-      Vera Holloway
-      <span>LPC &nbsp;·&nbsp; Author &nbsp;·&nbsp; Speaker</span>
-    </a>
+    <a href="index.html" class="nav__logo">Vera Holloway</a>
     <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav__links" id="navLinks">
       <li><a href="index.html" class="nav__link active">Home</a></li>
       <li><a href="about.html" class="nav__link">About</a></li>
-      <li><a href="services.html" class="nav__link">Services</a></li>
       <li><a href="speaking.html" class="nav__link">Speaking</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
       <li><a href="books.html" class="nav__link">Books</a></li>
-      <li><a href="blog.html" class="nav__link">Blog</a></li>
-      <li><a href="contact.html" class="nav__link btn btn--primary nav__cta">Get in Touch</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO — BOOK FEATURE -->
-  <section class="hero hero--book" id="home">
-    <div class="hero__bg"></div>
-    <div class="hero__leaf-1"></div>
-    <div class="hero__leaf-2"></div>
-    <div class="hero__leaf-3"></div>
-    <div class="container">
-      <div class="hero__book-inner">
-        <div class="hero__book-text">
-          <p class="hero__eyebrow">Now Available</p>
-          <h1 class="hero__headline">
-            Your Second<br />
-            <em>Chapter</em>
-          </h1>
-          <p class="hero__sub">
-            A new book by Vera Holloway — for the woman who thought her best days were behind her.
-            It's not too late to begin again.
-          </p>
-          <div class="hero__cta-group">
-            <a href="https://www.amazon.com/dp/1733736832" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Buy on Amazon</a>
-            <a href="books.html" class="btn btn--ghost">Learn More</a>
-          </div>
-        </div>
-        <div class="hero__book-cover-wrap">
-          <div class="hero__book-cover">
-            <div class="hero__book-spine"></div>
-            <div class="hero__book-face">
-              <span class="hero__book-title-text">Your Second<br />Chapter</span>
-              <span class="hero__book-author-text">Vera Holloway</span>
-            </div>
-          </div>
-          <div class="hero__book-shadow"></div>
-        </div>
-      </div>
+  <!-- Replace .hero__photo background-image with: url('images/vera-hero.jpg') once photo is available -->
+  <section class="hero" id="home">
+    <div class="hero__photo">
+      <!-- <img src="images/vera-hero.jpg" alt="Vera Holloway holding Your Second Chapter" /> -->
     </div>
-  </section>
-
-  <!-- HERO — COUNSELOR INTRO -->
-  <section class="hero-intro" id="counselor">
-    <div class="container">
-      <div class="hero-intro__inner">
-        <div class="hero-intro__text">
-          <p class="hero__eyebrow" style="color: var(--sage-mid);">Holloway Counseling Services</p>
-          <h2 class="hero-intro__headline">
-            Healing rooted in<br />
-            <em>faith, hope &amp; grace.</em>
-          </h2>
-          <p class="hero__sub">
-            Vera Holloway is a licensed professional counselor, author, and speaker walking
-            alongside women in south Louisiana — and beyond — toward wholeness, freedom, and renewed purpose.
-          </p>
-          <div class="hero__cta-group">
-            <a href="services.html" class="btn btn--primary">Schedule a Session</a>
-            <a href="about.html" class="btn btn--ghost">Meet Vera</a>
-          </div>
-        </div>
-        <div class="hero-intro__credentials">
-          <div class="hero-intro__cred">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <div>
-              <div class="hero-intro__cred-title">Licensed Professional Counselor</div>
-              <div class="hero-intro__cred-sub">Individual therapy, telehealth &amp; women's ministry support</div>
-            </div>
-          </div>
-          <div class="hero-intro__cred">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            <div>
-              <div class="hero-intro__cred-title">Author &amp; Speaker</div>
-              <div class="hero-intro__cred-sub">Books, retreats, conferences &amp; women's events</div>
-            </div>
-          </div>
-          <div class="hero-intro__cred">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            <div>
-              <div class="hero-intro__cred-title">South Louisiana</div>
-              <div class="hero-intro__cred-sub">Rooted in the bayou, reaching beyond</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INTRO / ABOUT STRIP -->
-  <section class="intro" id="about-strip">
-    <div class="container">
-      <div class="intro__inner">
-        <div class="intro__text reveal">
-          <span class="section-label">About Vera</span>
-          <h2 class="section-title">More than a counselor —<br /><em>a fellow traveler.</em></h2>
-          <p class="intro__body">
-            Vera Holloway grew up in the bayou country of south Louisiana, where life moves at the
-            pace of the water and roots run deep. That grounded, unhurried wisdom shapes everything
-            she does — whether she's sitting across from a client, standing on a stage, or
-            penning words meant to heal.
-          </p>
-          <p class="intro__body">
-            As owner of Holloway Counseling Services and a passionate women's ministry leader,
-            Vera weaves clinical expertise with faith-based compassion to help women find
-            their footing again.
-          </p>
-          <a href="about.html" class="btn btn--gold" style="margin-top: 8px;">Vera's Full Story</a>
-        </div>
-        <div class="intro__cards reveal" style="transition-delay: 0.15s;">
-          <div class="intro__card">
-            <div class="intro__card-icon">🌿</div>
-            <div class="intro__card-title">Bayou Roots, Deep Faith</div>
-            <div class="intro__card-body">Raised in south Louisiana's farm country, Vera's faith and love of the land infuse every session and every page she writes.</div>
-          </div>
-          <div class="intro__card">
-            <div class="intro__card-icon">📖</div>
-            <div class="intro__card-title">Author &amp; Storyteller</div>
-            <div class="intro__card-body">Vera's books blend real stories with biblical truth, offering women a mirror to see themselves through God's eyes.</div>
-          </div>
-          <div class="intro__card">
-            <div class="intro__card-icon">🎤</div>
-            <div class="intro__card-title">Sought-After Speaker</div>
-            <div class="intro__card-body">From women's retreats to church conferences, Vera brings warmth, humor, and hard-won truth to every stage.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES PREVIEW -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="services__header reveal">
-        <span class="section-label">Counseling Services</span>
-        <h2 class="section-title">A safe place to <em>breathe, grieve, and grow.</em></h2>
-        <p class="section-sub">
-          Holloway Counseling Services offers individual therapy rooted in clinical best practices
-          and a Christian worldview — in person in south Louisiana or via telehealth.
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__text reveal">
+        <p class="hero__available">Now Available on Amazon</p>
+        <p class="hero__book-title">Your Second Chapter:</p>
+        <p class="hero__book-subtitle">From Stuck to Grace, Purpose &amp; Productivity</p>
+        <p class="hero__book-desc">
+          <em>Your Second Chapter</em> guides the reader in writing their own second chapter
+          by introducing structures for self-evaluation and some relevant how-to principles
+          for getting unstuck.
         </p>
-      </div>
-      <div class="services__grid">
-        <div class="service-card reveal">
-          <div class="service-card__icon">🌸</div>
-          <div class="service-card__title">Individual Counseling</div>
-          <p class="service-card__body">One-on-one sessions tailored to your story — anxiety, depression, trauma, grief, life transitions, and more. You deserve a space that is entirely yours.</p>
-          <a href="services.html" class="service-card__link">Learn more →</a>
-        </div>
-        <div class="service-card reveal" style="transition-delay: 0.1s;">
-          <div class="service-card__icon">💛</div>
-          <div class="service-card__title">Women's Ministry Support</div>
-          <p class="service-card__body">Therapeutic resources and consultation for women's ministry leaders who want to shepherd their communities with both grace and healthy boundaries.</p>
-          <a href="services.html" class="service-card__link">Learn more →</a>
-        </div>
-        <div class="service-card reveal" style="transition-delay: 0.2s;">
-          <div class="service-card__icon">🌾</div>
-          <div class="service-card__title">Telehealth Sessions</div>
-          <p class="service-card__body">Quality care from the comfort of your home. Vera sees clients across Louisiana via secure video sessions — no commute required.</p>
-          <a href="services.html" class="service-card__link">Learn more →</a>
-        </div>
+        <a href="https://www.amazon.com/dp/1733736832" target="_blank" rel="noopener noreferrer" class="btn btn--sage">Learn More</a>
       </div>
     </div>
   </section>
 
-  <!-- SPEAKING STRIP -->
-  <section class="speaking" id="speaking">
+  <!-- I'M VERA -->
+  <section class="about-intro" id="about">
     <div class="container">
-      <div class="speaking__inner">
-        <div class="speaking__text reveal">
-          <span class="section-label">Speaking</span>
-          <h2 class="section-title">Real talk for<br /><em>real women.</em></h2>
-          <p class="section-sub">
-            Vera speaks at women's retreats, church conferences, events, and workshops —
-            bringing the same honesty and warmth to the stage that she brings to the counseling room.
-          </p>
-          <div class="speaking__topics">
-            <div class="speaking__topic">
-              <div class="speaking__topic-dot"></div>
-              <span class="speaking__topic-text">Healing from trauma and loss</span>
-            </div>
-            <div class="speaking__topic">
-              <div class="speaking__topic-dot"></div>
-              <span class="speaking__topic-text">Overcoming anxiety &amp; finding peace</span>
-            </div>
-            <div class="speaking__topic">
-              <div class="speaking__topic-dot"></div>
-              <span class="speaking__topic-text">Identity and worth rooted in Christ</span>
-            </div>
-            <div class="speaking__topic">
-              <div class="speaking__topic-dot"></div>
-              <span class="speaking__topic-text">Marriage, motherhood &amp; the messy in-between</span>
-            </div>
-            <div class="speaking__topic">
-              <div class="speaking__topic-dot"></div>
-              <span class="speaking__topic-text">Women's ministry leadership &amp; burnout prevention</span>
-            </div>
-          </div>
-          <a href="speaking.html" class="btn btn--primary">Book Vera to Speak</a>
-        </div>
-        <div class="speaking__visual reveal" style="transition-delay: 0.15s;">
-          <div class="speaking__quote-card">
-            <div class="speaking__quote-mark">&ldquo;</div>
-            <p class="speaking__quote-text">
-              Vera has this rare gift of making you feel completely seen and utterly challenged
-              at the same time. She doesn't speak at women — she speaks with them, and it changes things.
-            </p>
-            <div class="speaking__quote-attr">— Women's Retreat Attendee, Baton Rouge</div>
-          </div>
-          <div class="speaking__accent"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKS PREVIEW -->
-  <section class="books" id="books">
-    <div class="container">
-      <div class="books__header reveal">
-        <span class="section-label">Books by Vera</span>
-        <h2 class="section-title">Words written to <em>meet you where you are.</em></h2>
-        <p class="section-sub">
-          Each of Vera's books grew out of real conversations — with clients, with women in her ministry,
-          and with herself. They are honest, hopeful, and rooted in Scripture.
-        </p>
-      </div>
-      <div class="books__grid">
-        <div class="book-card reveal">
-          <div class="book-card__cover">📗</div>
-          <div class="book-card__info">
-            <div class="book-card__title">Coming Soon — Book Title</div>
-            <p class="book-card__body">A forthcoming work from Vera — stay tuned for details on her latest writing project.</p>
-            <a href="books.html" class="book-card__link">View all books →</a>
-          </div>
-        </div>
-        <div class="book-card reveal" style="transition-delay: 0.1s;">
-          <div class="book-card__cover">📘</div>
-          <div class="book-card__info">
-            <div class="book-card__title">Coming Soon — Book Title</div>
-            <p class="book-card__body">Another forthcoming title — Vera's library is growing. Check back soon.</p>
-            <a href="books.html" class="book-card__link">View all books →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIAL -->
-  <section class="testimonial">
-    <div class="container">
-      <div class="testimonial__inner reveal">
-        <div class="testimonial__mark">&ldquo;</div>
-        <p class="testimonial__text">
-          Working with Vera was the turning point I didn't know I needed.
-          She creates a space where you can finally exhale — and from there,
-          the real healing begins.
-        </p>
-        <div class="testimonial__attr">— Counseling Client</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG PREVIEW -->
-  <section class="blog" id="blog">
-    <div class="container">
-      <div class="blog__header">
+      <div class="about-intro__inner">
         <div class="reveal">
-          <span class="section-label">From the Blog</span>
-          <h2 class="section-title" style="margin-bottom: 0;">Thoughts for the <em>journey.</em></h2>
+          <p class="about-intro__eyebrow">Hey, Y'all!</p>
+          <h1 class="about-intro__heading">I'm Vera.</h1>
+          <p class="about-intro__body">
+            I'm a wife, mom of two, a licensed counselor, women's ministry leader, and business owner.
+            I live on a sweet little farm in the bayou country of south Louisiana. These roles are a wild ride
+            at times and definitely call for me to wear many hats, but God, boundaries, and balance make it all possible.
+          </p>
+          <a href="about.html" class="btn btn--sage">Learn More</a>
         </div>
-        <a href="blog.html" class="btn btn--ghost reveal" style="transition-delay: 0.1s; flex-shrink: 0;">All Posts →</a>
-      </div>
-      <div class="blog__grid">
-        <div class="blog-card reveal">
-          <div class="blog-card__image">🌿</div>
-          <div class="blog-card__body">
-            <span class="blog-card__tag">Faith &amp; Healing</span>
-            <div class="blog-card__title">When Healing Feels Slow: Grace for the In-Between</div>
-            <p class="blog-card__excerpt">Healing isn't linear — and the God who created time isn't surprised by yours. A word for the woman who feels stuck.</p>
-            <div class="blog-card__meta">Coming soon</div>
-          </div>
-        </div>
-        <div class="blog-card reveal" style="transition-delay: 0.1s;">
-          <div class="blog-card__image">☀️</div>
-          <div class="blog-card__body">
-            <span class="blog-card__tag">Anxiety</span>
-            <div class="blog-card__title">The Difference Between Worry and Prayer (and Why It Matters)</div>
-            <p class="blog-card__excerpt">Both feel like talking to God, but only one brings peace. Here's how to tell them apart — and what to do with each.</p>
-            <div class="blog-card__meta">Coming soon</div>
-          </div>
-        </div>
-        <div class="blog-card reveal" style="transition-delay: 0.2s;">
-          <div class="blog-card__image">🌾</div>
-          <div class="blog-card__body">
-            <span class="blog-card__tag">Identity</span>
-            <div class="blog-card__title">Rooted: What Growing Up in the Bayou Taught Me About Belonging</div>
-            <p class="blog-card__excerpt">There's something about south Louisiana that gets in your bones. A personal reflection on place, identity, and home.</p>
-            <div class="blog-card__meta">Coming soon</div>
-          </div>
+        <div class="about-intro__photo reveal" style="transition-delay: 0.15s;">
+          <!-- <img src="images/vera-about.jpg" alt="Vera Holloway" /> -->
+          <div class="photo-placeholder">Photo of Vera<br />coming soon</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
-  <section class="cta-banner">
+  <!-- LET'S WORK TOGETHER -->
+  <section class="work-together" id="services">
     <div class="container">
-      <div class="cta-banner__inner reveal">
-        <h2 class="cta-banner__title">Ready to take the next step?</h2>
-        <p class="cta-banner__body">
-          Whether you're looking for counseling, want Vera to speak at your event, or just want
-          to say hello — the door is open. You don't have to have it all figured out to reach out.
-        </p>
-        <div class="cta-banner__actions">
-          <a href="contact.html" class="btn btn--primary">Get in Touch</a>
-          <a href="services.html" class="btn btn--ghost">View Services</a>
+      <p class="work-together__label">Let's Work Together</p>
+      <div class="work-grid">
+
+        <div class="work-card reveal">
+          <div class="work-card__photo">
+            <!-- <img src="images/work-counseling.jpg" alt="Counseling" /> -->
+            <div class="photo-placeholder">Counseling photo</div>
+          </div>
+          <h3 class="work-card__title">Counseling</h3>
+          <p class="work-card__body">
+            Vera is a licensed professional counselor and holds certifications in mediation and
+            Christian counseling. She currently owns and operates a private practice,
+            Holloway Counseling Services. Her practice focuses on helping those with trauma,
+            marriage and family, and relationship conflicts.
+          </p>
+          <a href="services.html" class="work-card__link">Schedule a Consultation</a>
         </div>
+
+        <div class="work-card reveal" style="transition-delay: 0.1s;">
+          <div class="work-card__photo">
+            <!-- <img src="images/work-book.jpg" alt="Your Second Chapter book" /> -->
+            <div class="photo-placeholder">Book photo</div>
+          </div>
+          <h3 class="work-card__title">Book</h3>
+          <p class="work-card__body">
+            Introducing Vera's new book, <em>Your Second Chapter</em>. Using over ten years of counseling
+            experience, she gives her readers a chance to change their stories.
+            <br /><br />
+            <em>Your Second Chapter</em> guides the reader in writing their own second chapter by
+            introducing structures for self-evaluation and some relevant how-to principles for getting unstuck.
+          </p>
+          <a href="https://www.amazon.com/dp/1733736832" target="_blank" rel="noopener noreferrer" class="work-card__link">Order a Copy Today</a>
+        </div>
+
+        <div class="work-card reveal" style="transition-delay: 0.2s;">
+          <div class="work-card__photo">
+            <!-- <img src="images/work-speaking.jpg" alt="Vera speaking" /> -->
+            <div class="photo-placeholder">Speaking photo</div>
+          </div>
+          <h3 class="work-card__title">Speaking</h3>
+          <p class="work-card__body">
+            Vera is a teacher at heart and the opportunity to touch &amp; minister to people is something she
+            continually pursues. Whether it's a business event, workshop, or church conference, Vera loves
+            meeting new people as well as sharing her knowledge and practical applications for emotional health.
+            Her calendar fills quickly, so secure your dates today!
+          </p>
+          <a href="speaking.html" class="work-card__link">Book Vera to Speak</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EMAIL SIGNUP -->
+  <section class="email-signup">
+    <div class="container">
+      <div class="email-signup__inner">
+        <div class="reveal">
+          <p class="email-signup__label">Join Vera's Email List to Receive</p>
+          <h2 class="email-signup__heading">Want to stay up to date?</h2>
+          <p class="email-signup__body">
+            Make sure to stay in the loop on updates on Vera's new book,
+            <em>Your Second Chapter</em>, events, and much more!
+          </p>
+        </div>
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <form class="email-signup__form" action="#" method="post">
+            <input class="email-signup__input" type="email" name="email" placeholder="Email Address" required />
+            <button class="email-signup__submit" type="submit">Subscribe</button>
+          </form>
+          <p class="email-signup__ck">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Built with ConvertKit
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG + SIDEBAR -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="blog-section__layout">
+
+        <!-- MAIN POSTS -->
+        <div>
+          <p class="blog-section__label">Latest from the Blog</p>
+
+          <!-- Featured post -->
+          <div class="blog-featured reveal">
+            <div class="blog-featured__image">
+              <!-- <img src="images/blog-tech-war.jpg" alt="The Great Tech War" /> -->
+              <div class="photo-placeholder">Blog featured image</div>
+            </div>
+            <h2 class="blog-featured__title">The Great Tech War</h2>
+            <p class="blog-featured__excerpt">
+              What age should my child get a phone? One of the most common questions I am asked as a counselor is,
+              what age should my kid get a phone? Here is my inside perspective from years of clinical mental health
+              counseling and currently living in the season of parenting pre-teens. This is a war like&hellip;
+            </p>
+            <a href="blog.html" class="blog-featured__more">Continue Reading &rarr;</a>
+          </div>
+
+          <!-- Smaller posts -->
+          <div class="blog-small-grid">
+            <div class="reveal" style="transition-delay: 0.1s;">
+              <div class="blog-small-card__image">
+                <!-- <img src="images/blog-comparison.jpg" alt="Comparison" /> -->
+                <div class="photo-placeholder">Blog image</div>
+              </div>
+              <h3 class="blog-small-card__title">Comparison — don't fall for it!</h3>
+              <a href="blog.html" class="blog-small-card__more">Continue Reading &rarr;</a>
+            </div>
+            <div class="reveal" style="transition-delay: 0.15s;">
+              <div class="blog-small-card__image">
+                <!-- <img src="images/blog-mission.jpg" alt="Mission Trip" /> -->
+                <div class="photo-placeholder">Blog image</div>
+              </div>
+              <h3 class="blog-small-card__title">OUR 2017 REFUGE 127 MISSION TRIP</h3>
+              <a href="blog.html" class="blog-small-card__more">Continue Reading &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+          <div class="blog-sidebar__hey reveal">
+            <div class="blog-sidebar__photo">
+              <!-- <img src="images/vera-sidebar.jpg" alt="Vera Holloway" /> -->
+              <div class="photo-placeholder">Vera photo</div>
+            </div>
+            <p class="blog-sidebar__name">Hey Y'all!</p>
+            <p class="blog-sidebar__bio">
+              I'm a wife, mom of two, a licensed counselor, women's ministry leader, and business owner.
+              I live on a sweet little farm in the bayou country of south Louisiana. These roles are a wild ride
+              at times and definitely call for me to wear many hats, but God, boundaries, and balance make it all possible.
+            </p>
+          </div>
+          <div class="blog-sidebar__connect reveal" style="transition-delay: 0.1s;">
+            <p class="blog-sidebar__connect-label">Let's Connect</p>
+            <div class="blog-sidebar__socials">
+              <a href="#" class="blog-sidebar__social" aria-label="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="blog-sidebar__social" aria-label="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="mailto:hello@veraholloway.com" class="blog-sidebar__social" aria-label="Email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <div class="footer__brand-name">Vera Holloway</div>
-          <div class="footer__brand-sub">LPC &nbsp;·&nbsp; Author &nbsp;·&nbsp; Speaker</div>
-          <p class="footer__brand-body">
-            Licensed counselor, author, and speaker walking alongside women
-            toward healing and wholeness — rooted in south Louisiana, reaching beyond.
-          </p>
-          <div class="footer__social">
-            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
-            <a href="#" class="footer__social-link" aria-label="Instagram">in</a>
-            <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
-          </div>
-        </div>
-        <div>
-          <div class="footer__col-title">Navigate</div>
-          <ul class="footer__links">
-            <li><a href="index.html" class="footer__link">Home</a></li>
-            <li><a href="about.html" class="footer__link">About</a></li>
-            <li><a href="services.html" class="footer__link">Services</a></li>
-            <li><a href="speaking.html" class="footer__link">Speaking</a></li>
-            <li><a href="books.html" class="footer__link">Books</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer__col-title">Services</div>
-          <ul class="footer__links">
-            <li><a href="services.html" class="footer__link">Individual Counseling</a></li>
-            <li><a href="services.html" class="footer__link">Telehealth Sessions</a></li>
-            <li><a href="services.html" class="footer__link">Women's Ministry</a></li>
-            <li><a href="speaking.html" class="footer__link">Speaking Engagements</a></li>
-            <li><a href="books.html" class="footer__link">Books &amp; Resources</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer__col-title">Contact</div>
-          <div class="footer__contact-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>hello@veraholloway.com</span>
-          </div>
-          <div class="footer__contact-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>South Louisiana</span>
-          </div>
-          <br />
-          <a href="contact.html" class="btn btn--gold" style="font-size: 0.78rem; padding: 10px 20px;">Get in Touch</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="footer__copyright">
-          &copy; 2026 Vera Holloway &nbsp;·&nbsp; Holloway Counseling Services. All rights reserved.
-        </div>
-        <div class="footer__legal">
-          <a href="#" class="footer__legal-link">Privacy Policy</a>
-          <a href="#" class="footer__legal-link">Terms</a>
-        </div>
-      </div>
+    <div class="footer__links">
+      <a href="books.html" class="footer__link">Books</a>
+      <a href="speaking.html" class="footer__link">Speaking</a>
+    </div>
+    <p class="footer__center">&copy; 2026 Vera Holloway. All rights reserved.</p>
+    <div class="footer__socials">
+      <a href="#" class="footer__social" aria-label="Facebook">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="#" class="footer__social" aria-label="Instagram">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
     </div>
   </footer>
 
