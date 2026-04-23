@@ -1,0 +1,173 @@
+/* =============================================
+   CONTACT PAGE
+   ============================================= */
+
+/* --- Connect with Vera --- */
+
+.contact-intro {
+  padding: 72px 0 64px;
+  background: var(--cream);
+}
+
+.contact-intro__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.contact-intro__heading {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--sage-dark);
+  margin-bottom: 20px;
+}
+
+.contact-intro__body {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.contact-intro__phone {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.contact-intro__phone a {
+  color: var(--terracotta);
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+.contact-intro__phone a:hover { opacity: 0.75; }
+
+.contact-intro__follow {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+}
+
+.contact-intro__follow a {
+  color: var(--terracotta);
+  transition: opacity 0.2s;
+}
+.contact-intro__follow a:hover { opacity: 0.75; }
+
+.contact-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.contact-intro__grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.contact-intro__grid img:first-child { border-radius: 4px 0 0 0; }
+.contact-intro__grid img:nth-child(2) { border-radius: 0 4px 0 0; }
+.contact-intro__grid img:nth-child(3) { border-radius: 0 0 0 4px; }
+.contact-intro__grid img:last-child { border-radius: 0 0 4px 0; }
+
+/* --- Contact Form --- */
+
+.contact-form-section {
+  padding: 64px 0 88px;
+  background: var(--white);
+  border-top: 1px solid var(--cream-deep);
+}
+
+.contact-form-section__heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--terracotta);
+  margin-bottom: 36px;
+  max-width: 680px;
+  line-height: 1.4;
+}
+
+.contact-form {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form__field label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-mid);
+}
+
+.required {
+  color: var(--terracotta);
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+  border: none;
+  border-bottom: 1.5px solid var(--cream-deep);
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+  width: 100%;
+}
+
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+  border-color: var(--sage);
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--text-mid);
+  padding: 11px 32px;
+  border-radius: 2px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.contact-form__submit:hover {
+  background: var(--text);
+  color: var(--white);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+  .contact-intro__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-intro__grid {
+    order: -1;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vera Holloway</title>
+  <meta name="description" content="Get in touch with Vera Holloway — book her to speak, ask about counseling, or just say hello." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BANNER -->
+  <div class="announcement-bar" id="announcementBar">
+    <p>My new book, <em>Your Second Chapter</em> is now available on Amazon &mdash; <a href="https://www.amazon.com/dp/B0GM21QV7R" target="_blank" rel="noopener noreferrer">Buy Here!</a></p>
+    <button class="announcement-bar__close" id="closeBar" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Vera Holloway</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="speaking.html" class="nav__link">Speaking</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="books.html" class="nav__link">Books</a></li>
+      <li><a href="contact.html" class="nav__link active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONNECT WITH VERA -->
+  <section class="contact-intro">
+    <div class="container">
+      <div class="contact-intro__inner">
+        <div class="contact-intro__text reveal">
+          <h1 class="contact-intro__heading">Connect with Vera</h1>
+          <p class="contact-intro__body">
+            Vera is a wife, mom of two, a licensed counselor, women's ministry leader, and business owner.
+            She lives with her family on a sweet little farm in the bayou country of south Louisiana.
+            These roles are a wild ride at times and definitely call for Vera to wear many hats, but God,
+            boundaries and balance make it all possible.
+          </p>
+          <p class="contact-intro__phone">
+            The best way to reach us is by submitting the form below. You can also reach us by phone at
+            <a href="tel:8334656929">833-465-6929</a>.
+          </p>
+          <p class="contact-intro__follow">
+            Follow Vera on <a href="https://www.instagram.com/veraholloway" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </p>
+        </div>
+        <div class="contact-intro__grid reveal" style="transition-delay: 0.15s;">
+          <img src="images/topleft.jpg" alt="" />
+          <img src="images/topright.jpg" alt="" />
+          <img src="images/bottomleft.jpg" alt="" />
+          <img src="images/bottomright.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-form-section">
+    <div class="container">
+      <h2 class="contact-form-section__heading reveal">Want to have Vera speak at your event or be a guest on your podcast?</h2>
+      <form class="contact-form reveal" action="https://formspree.io/f/xzdyyadd" method="POST">
+        <div class="contact-form__field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="contact-form__field">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="contact-form__field">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="7" required></textarea>
+        </div>
+        <button type="submit" class="contact-form__submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="books.html" class="footer__link">Books</a>
+      <a href="speaking.html" class="footer__link">Speaking</a>
+    </div>
+    <p class="footer__center">&copy; 2026 Vera Holloway. All rights reserved.</p>
+    <div class="footer__socials">
+      <a href="https://www.facebook.com/vera.grabertholloway" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/veraholloway" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
