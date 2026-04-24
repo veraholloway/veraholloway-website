@@ -7,12 +7,10 @@
 .about-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 520px;
-  align-items: start;
 }
 
 .about-top__photo {
-  overflow: hidden;
+  align-self: flex-start;
 }
 
 .about-top__photo img {
