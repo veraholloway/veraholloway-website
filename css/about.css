@@ -177,7 +177,14 @@
 
   .about-mid__photo {
     order: 1;
-    max-height: 340px;
+    max-height: none;
+  }
+
+  .about-mid__photo img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
   }
 
   .about-favs__grid {
