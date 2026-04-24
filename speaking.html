@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speaking + Events — Vera Holloway</title>
+  <meta name="description" content="Invite Vera Holloway to speak at your business event, workshop, or church conference. Her calendar fills quickly — secure your dates today." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/speaking.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BANNER -->
+  <div class="announcement-bar" id="announcementBar">
+    <p>My new book, <em>Your Second Chapter</em> is now available on Amazon &mdash; <a href="https://www.amazon.com/dp/B0GM21QV7R" target="_blank" rel="noopener noreferrer">Buy Here!</a></p>
+    <button class="announcement-bar__close" id="closeBar" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Vera Holloway</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="speaking.html" class="nav__link active">Speaking</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="resources.html" class="nav__link">Resources</a></li>
+      <li><a href="books.html" class="nav__link">Books</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="speaking-hero">
+    <div class="container">
+      <h1 class="speaking-hero__title">Speaking + Events</h1>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section class="speaking-intro">
+    <div class="container">
+      <div class="speaking-intro__inner reveal">
+        <div class="speaking-intro__photo">
+          <img src="images/speaking1.jpg" alt="Vera Holloway speaking" />
+        </div>
+        <div class="speaking-intro__text">
+          <h2 class="speaking-intro__hey">Hey Y'all!</h2>
+          <p>Over the years, Vera has spent a great deal of time working with women held back by shame, insecurities, brokenness, heartache, rejection, guilt, and unworthiness. During her doctoral study, she began to take a closer look at all these core issues women were experiencing. Combining core women&rsquo;s issues, her own personal life experiences, and her clients&rsquo; experiences, she wrote a book, <em>Beauty From Ashes: My Journey from Broken to Beautiful</em> which was based on the curriculum of the same name.</p>
+          <p>Whether it&rsquo;s a business event, workshop, or church conference, Vera loves meeting new people and sharing her knowledge and practical applications for emotional health.</p>
+          <p>Her calendar fills quickly, so secure your dates today!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVITE VERA FORM -->
+  <section class="speaking-form-section">
+    <div class="container">
+      <div class="speaking-form__inner reveal">
+        <h2 class="speaking-form__heading">Invite Vera To Speak</h2>
+        <form class="speaking-form" action="https://formspree.io/f/xzdyyadd" method="POST">
+          <input type="hidden" name="_replyto" value="hollowaycounseling@gmail.com" />
+          <div class="speaking-form__row">
+            <div class="speaking-form__field">
+              <label for="speak-name">Name</label>
+              <input type="text" id="speak-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="speaking-form__field">
+              <label for="speak-email">Email</label>
+              <input type="email" id="speak-email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="speaking-form__row">
+            <div class="speaking-form__field">
+              <label for="speak-event-type">Event Type</label>
+              <input type="text" id="speak-event-type" name="event_type" placeholder="e.g. Church conference, workshop..." />
+            </div>
+            <div class="speaking-form__field">
+              <label for="speak-event-date">Event Date</label>
+              <input type="text" id="speak-event-date" name="event_date" placeholder="e.g. June 14, 2026" />
+            </div>
+          </div>
+          <div class="speaking-form__field">
+            <label for="speak-location">Location</label>
+            <input type="text" id="speak-location" name="location" placeholder="City, State" />
+          </div>
+          <div class="speaking-form__field">
+            <label for="speak-message">Message</label>
+            <textarea id="speak-message" name="message" rows="5" placeholder="Tell Vera a little about your event..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--sage speaking-form__submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="books.html" class="footer__link">Books</a>
+      <a href="speaking.html" class="footer__link">Speaking</a>
+    </div>
+    <p class="footer__center">&copy; 2026 Vera Holloway. All rights reserved.</p>
+    <div class="footer__socials">
+      <a href="https://www.facebook.com/vera.grabertholloway" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/veraholloway" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
