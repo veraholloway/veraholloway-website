@@ -13,14 +13,16 @@
 
 .about-top__photo {
   overflow: hidden;
+  display: flex;
+  align-items: flex-start;
 }
 
 .about-top__photo img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 500px;
   object-fit: cover;
   object-position: top;
+  display: block;
 }
 
 .about-top__text {
