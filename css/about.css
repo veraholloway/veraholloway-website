@@ -2,26 +2,31 @@
    ABOUT PAGE
    ============================================= */
 
-/* --- Top Section --- */
+/* --- Hero Photo --- */
 
-.about-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.about-top__photo {
-  align-self: flex-start;
-}
-
-.about-top__photo img {
+.about-hero {
   width: 100%;
-  height: auto;
+  height: 500px;
+  overflow: hidden;
+}
+
+.about-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
   display: block;
 }
 
-.about-top__text {
-  padding: 72px 56px 56px;
+/* --- Bio Intro --- */
+
+.about-top {
   background: var(--white);
+  padding: 64px 0 56px;
+}
+
+.about-top__text {
+  max-width: 720px;
 }
 
 .about-top__label {
